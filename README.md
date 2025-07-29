@@ -33,8 +33,29 @@ It is highly recommended to use a virtual environment to manage project dependen
 # Create the virtual environment
 python -m venv venv
 
+
+
+
 # Activate the environment
 # On Windows:
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate.
+
+
+## Configure the API Key
+
+Open both converter.py and gui_converter.py and replace the placeholder text YOUR_API_KEY with your actual API key.
+
+```sh
+# Find this line in both files and update it
+api_key = 'YOUR_API_KEY'
+```
+
+## GUI Version
+To launch the graphical interface, run the gui_converter.py script:
+
+```sh
+python gui_converter.py
+```
+
